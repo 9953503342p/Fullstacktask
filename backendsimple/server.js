@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 9080;
 
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://fullstacktask-2.onrender.com'
 }));
 
 
