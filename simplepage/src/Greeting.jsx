@@ -16,7 +16,7 @@ const GreetingPage = () => {
       }
 
       try {
-        const response = await fetch(`/api/greet?name=${encodeURIComponent(name)}`);
+        const response = await fetch(`https://fullstacktask-1.onrender.com/api/greet?name=${encodeURIComponent(name)}`);
         const data = await response.json();
         if (!response.ok) throw new Error(data.error || 'Failed to fetch');
         setMessage(data.message);
